@@ -1,0 +1,162 @@
+html,
+body {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+body,
+ul,
+li,
+a,
+p,
+div {
+    /*慎删*/
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+    border: none;
+    height: 70px;
+    background: #02011f;
+}
+
+.navbar-brand {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-brand img {
+    height: 47px;
+    display: block;
+    padding: 2px 0px;
+    margin-top: 10px;
+}
+
+.navbar-nav {
+    background: #02011f;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+.navbar-nav a {
+    color: rgb(255, 255, 255)!important;
+}
+
+.navbar-nav li .erji-menu {
+    display: none;
+    border-top: 0px;
+    position: absolute;
+    background: #02011f;
+}
+
+.navbar-nav li .erji-menu li {
+    width: 100%;
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+.navbar-nav li .erji-menu li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+.navbar-nav li:hover>.erji-menu {
+    display: block;
+    z-index: 999;
+}
+
+.navbar-nav a:hover {
+    color: white!important;
+    text-decoration: none;
+}
+
+#wrap {
+    overflow: hidden;
+    width: 100%;
+}
+
+#main {
+    top: 0;
+    position: relative;
+}
+
+.page {
+    /*谨删*/
+    width: 100%;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.page img {
+    /* width: 100%; */
+    min-width: 2100px;
+    /* height: 100%; */
+    display: block;
+}
+
+#pageUl {
+    position: fixed;
+    right: 10px;
+    z-index: 100;
+}
+
+#pageUl li {
+    list-style: none;
+    background-color: yellowgreen;
+    border-radius: 15px;
+    margin-top: 10pt;
+    padding: 5pt;
+    color: white;
+    font-weight: bold;
+    ;
+}
+
+.page1-wenzi {
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+
+.page1-wenzi button {
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 15px;
+    padding: 10pt;
+    color: white;
+    font-size: 15pt;
+    margin-top: 30pt;
+    box-shadow: 1px 2px 1px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.page1-wenzi button:hover {
+    background-color: rgb(103, 155, 0);
+}
+
+@media screen and (max-width:993px) {
+    .page1-wenzi .p2 {
+        display: none;
+    }
+    /* .page1-wenzi {
+        top: 30%;
+    } */
+    .page1-wenzi button {
+        padding: 5pt;
+    }
+    /* .row2_img {
+        display: none;
+    }
+    .row3 {
+        margin-bottom: 15px;
+    }
+    .row4 {
+        margin-top: 0;
+    } */
+}

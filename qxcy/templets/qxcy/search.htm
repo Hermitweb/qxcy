@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{dede:field.typename/}_{dede:global.cfg_webname/}</title>
+    <link rel="icon" href="{dede:global.cfg_templets_skin/}/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="{dede:global.cfg_templets_skin/}/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/news.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/nav.css">
+</head>
+
+<body>
+    {dede:include filename="head.htm"/}
+    <div class="con-bg">
+        <div class="news">
+            <div class="weizhi">
+                <p>{dede:field name='position'/}</p>
+            </div>
+
+            <h1 class="title">{dede:field.typename/}</h1>
+
+            <div class="row">
+                <h1 style="text-align: center;">搜索 <strong style="color:#C6191F">{dede:global name='keyword' function='RemoveXSS(@me)'/}</strong> 的结果
+                </h1>
+                <div class="news_left col-xs-12">
+                    <div class="tabnav">
+                        <div class="tabbody">
+
+                            {dede:list perpage='3'}
+                            <div class="newlist">
+                                <div class="riqi">
+                                    <div class="ri">[field:pubdate function="MyDate('d',@me)"/]</div>
+                                    <div class="nianyue">[field:pubdate function="MyDate('Y-m',@me)"/]</div>
+                                </div>
+                                <div class="newtitles">
+                                    <div class="newtitle" style="display: flex;justify-content: space-between;">
+                                        <a href="[field:arcurl/]">[field:title/]</a>
+                                        <span>所属栏目：[field:typename/]</span>
+                                    </div>
+                                    <div class="miaoshu">
+                                        [field:description function="cn_substr(@me,800)"/]...
+                                    </div>
+                                    <p class="sj-ri">发布日期：[field:pubdate function="MyDate('Y-m-d',@me)"/]</p>
+                                </div>
+                            </div>
+                            {/dede:list}
+
+                        </div>
+                    </div>
+                    <ul class="pagelist">{dede:pagelist listitem="" listsize="1"/}</ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    {dede:include filename="footer.htm"/}
+</body>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/bootstrap.min.js"></script>
+
+</html>

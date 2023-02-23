@@ -1,0 +1,1 @@
+<a href="[field:typeurl/] "><img src="{dede:global.cfg_templets_skin/}/images/2.png" alt=""></a>

@@ -1,0 +1,1 @@
+<li><a href="[field:arcurl/]"><i class="glyphicon glyphicon-triangle-right"></i>[field:fulltitle/]</a></li>

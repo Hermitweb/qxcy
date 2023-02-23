@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+    <link rel="icon" href="{dede:global.cfg_templets_skin/}/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="{dede:global.cfg_templets_skin/}/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/news.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/nav.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/content.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    {dede:include filename="head.htm"/}
+    <div id="top"></div>
+    <div class="news ">
+        <div class="weizhi">
+            <p>{dede:field name='position'/}</p>
+        </div>
+        <div class="row content_box">
+            <div class="news_left col-md-9 col-sm-12 content_box_left">
+                <center>
+                    {dede:field.title/}
+                </center>
+                <div class="time">
+                    <div> <i class="glyphicon glyphicon-calendar" style="margin0-right:5px;"></i> {dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</div>
+                    <div>来源：{dede:field.source/}</div>
+                </div>
+                <div class="content">
+                    {dede:field.body/}
+                </div>
+
+            </div>
+            <div class="news_right col-md-3 col-sm-12">
+                <div class="tuijian">
+
+                    <div class="tuijiantitle">
+                        <h4>热门推荐</h4>
+                        <ul>
+                            {dede:arclist pagesize ='3' flag='c'}
+                            <li><a href="[field:arcurl/]"><i class="glyphicon glyphicon-triangle-right"></i>[field:fulltitle/]</a></li>
+                            {/dede:arclist}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="fanpian">
+            <li>{dede:prenext get='pre'/}</li>
+            <li>{dede:prenext get='next'/}</li>
+        </ul>
+    </div>
+    {dede:include filename="footer.htm"/}
+    <!-- <div class="fanhuidb">
+        <a href="#top">^</a>
+    </div> -->
+    <div id="goToTop" class="fanhuidb"><a href="javascript:;">↑</a></div>
+</body>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/bootstrap.min.js"></script>
+<script>
+    $(function() {
+
+        $('#goToTop').hide();
+
+        $(window).scroll(function() {
+
+            // console.log($(this).scrollTop());
+
+            //当window的scrolltop距离大于1时，go to 
+            if ($(this).scrollTop() > 100) {
+                $('#goToTop').fadeIn();
+            } else {
+                $('#goToTop').fadeOut();
+            }
+        });
+
+        $('#goToTop a').click(function() {
+            $('html ,body').animate({
+                scrollTop: 0
+            }, 300);
+            return false;
+        });
+
+
+
+    });
+</script>
+
+</html>

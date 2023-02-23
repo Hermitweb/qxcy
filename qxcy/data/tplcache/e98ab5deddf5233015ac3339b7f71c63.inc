@@ -1,0 +1,1 @@
+<a href="[field:typeurl/]">我要加盟</a>

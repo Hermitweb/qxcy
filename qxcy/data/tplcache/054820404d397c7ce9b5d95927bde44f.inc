@@ -1,0 +1,1 @@
+<a href="[field:typeurl/]#jianjie">了解更多</a>

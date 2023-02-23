@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>沁香茶叶</title>
+    <link rel="icon" href="{dede:global.cfg_templets_skin/}/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="{dede:global.cfg_templets_skin/}/images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/news.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/nav.css">
+</head>
+
+<body>
+    {dede:include filename="head.htm"/}
+
+    <div class="con-bg">
+        <div class="news">
+            <div class="weizhi">
+                <p>{dede:field name='position'/}</p>
+            </div>
+            <h1 class="title">{dede:field.reid runphp='yes'} global $dsql; $reid = @me; $query = "SELECT * FROM `#@__arctype` where id =$reid "; $dsql->Execute('a', $query); $arctype = $dsql->GetObject('a'); @me = $arctype->typename; {/dede:field.reid}</h1>
+            <div class="row">
+                <ul class="tabtop">
+                    {dede:channel type ='son' currentstyle='<li><a href="~typelink~" class="active">~typename~</a></li>'}
+                    <li><a href="[field:typelink/]">[field:typename/]</a></li>
+                    {/dede:channel}
+                </ul>
+                <div class="news_left col-md-9 col-sm-12">
+
+
+                    {dede:list pagesize ='3'}
+                    <div class="newlist">
+                        <div class="riqi">
+                            <div class="ri">[field:pubdate function="MyDate('d',@me)"/]</div>
+                            <div class="nianyue">[field:pubdate function="MyDate('Y-m',@me)"/]</div>
+                        </div>
+                        <div class="newtitles">
+                            <div class="newtitle"><a href="[field:arcurl/]">[field:title/]</a></div>
+                            <div class="miaoshu">
+                                [field:description function="cn_substr(@me,400)"/]...
+                            </div>
+                            <p class="sj-ri">发布日期：[field:stime/]</p>
+                        </div>
+                    </div>
+                    {/dede:list}
+                    <ul class="pagelist">{dede:pagelist listitem="index,pre,pageno,next,end,option,info" listsize="1"/}</ul>
+
+
+                </div>
+                <div class="news_right col-md-3 col-sm-12">
+                    <div class="tuijian">
+                        
+                        <div class="tuijiantitle">
+                            <h4>热门推荐</h4>
+                            <ul>
+                                {dede:arclist pagesize ='3' flag='c}
+                                <li><a href="[field:arcurl/]"><i class="glyphicon glyphicon-triangle-right"></i>[field:fulltitle/]</a></li>
+                                {/dede:arclist}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    {dede:include filename="footer.htm"/}
+</body>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/bootstrap.min.js"></script>
+
+</html>

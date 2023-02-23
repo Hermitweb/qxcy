@@ -1,0 +1,196 @@
+a {
+    display: inline;
+}
+
+.cp {
+    width: 100%;
+    overflow: hidden;
+    background: rgba(224, 228, 160, 0.1);
+}
+
+
+/* img {
+    width: 100%;
+    display: block;
+    margin: 0 auto; 
+
+}*/
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* .totu {
+    position: relative;
+} */
+
+.dwwenz {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.cp {
+    background-image: url(../../images/bg4.jpg);
+}
+
+.cp-nr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/* .totu p {
+    text-align: center;
+    font-family: 楷体;
+    font-size: 20pt;
+}
+
+.totu h1 {
+    text-align: center;
+    font-size: 30pt;
+    font-family: 楷体;
+    margin: 0;
+} */
+
+
+/* .row {
+    width: 90%;
+    margin: 2vh auto;
+}
+
+.row li img {
+    width: 100%;
+}
+
+.row li {
+    margin: 5vh 0vh;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.row li a {
+    text-decoration: none;
+    color: black;
+}
+
+.row p {
+    padding: 4vh 0;
+    margin: 0;
+    text-align: center;
+}
+
+.row li:hover {
+    border: 1px solid #ccc;
+    box-shadow: 0px 15px 10px -15px #000;
+} */
+
+nav {
+    padding-top: 50pt;
+    margin: 10pt auto;
+    text-align: center;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: rgb(114, 114, 114);
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+}
+
+#sortable {
+    margin-top: 30px;
+}
+
+.tabtop {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tabtop li {
+    margin: 10px 30px;
+}
+
+.tabtop li a {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #6e9866;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+}
+
+.active2 {
+    text-decoration: none;
+    background: #b0b661;
+    color: white !important;
+}
+
+.tabtop li a:hover {
+    text-decoration: none;
+    background: #b0b661;
+    color: white;
+}
+
+.weizhi {
+    border-bottom: 1px solid black;
+    padding-top: 20px;
+    color: black;
+}
+
+.weizhi a {
+    color: black;
+}
+
+.pagelist {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px auto;
+}
+
+.pagelist>li {
+    background: white;
+    padding: 10px 15px;
+    border: 1px solid #aaa;
+}
+
+.pagelist>li>a {
+    display: block;
+    width: 100%;
+    color: black
+}
+
+@media screen and (max-width:993px) {
+    .p2 {
+        display: none;
+    }
+    /* .row2_img {
+        display: none;
+    }
+    .row3 {
+        margin-bottom: 15px;
+    }
+    .row4 {
+        margin-top: 0;
+    } */
+}
+
+@media screen and (max-width:460px) {
+    .tabtop li {
+        margin: 1%;
+        flex-basis: 48%;
+    }
+}

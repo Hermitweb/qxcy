@@ -1,0 +1,13 @@
+<div class="newlist">
+                        <div class="riqi">
+                            <div class="ri">29</div>
+                            <div class="nianyue">[field:pubdate function="MyDate('Y-m',@me)"/]</div>
+                        </div>
+                        <div class="newtitles">
+                            <div class="newtitle"><a href="[field:arcurl/]">[field:fulltitle/]</a></div>
+                            <div class="miaoshu">
+                                [field:description function="cn_substr(@me,600)"/]...
+                            </div>
+                            <p class="sj-ri">发布日期：[field:pubdate function="MyDate('Y-m-d',@me)"/]</p>
+                        </div>
+                    </div>

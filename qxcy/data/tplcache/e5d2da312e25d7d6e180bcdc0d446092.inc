@@ -1,0 +1,1 @@
+<a href="[field:typeurl/]#liuyan">我要加盟</a>

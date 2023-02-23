@@ -1,0 +1,1 @@
+<a href="[field:typeurl/]#huanjin ">了解更多</a>

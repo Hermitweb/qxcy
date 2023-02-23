@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{dede:global.cfg_webname/}</title>
+    <link rel="icon" href="{dede:global.cfg_templets_skin/}/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="{dede:global.cfg_templets_skin/}/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/swiper.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/animate.min.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/nav.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/index.css">
+
+</head>
+
+<body>
+    <!-- 导航 -->
+    {dede:include filename="head.htm"/}
+
+    <!-- 轮播图 -->
+    <div class="lunbotu">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="{dede:global.cfg_templets_skin/}/images/banner1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="{dede:global.cfg_templets_skin/}/images/banner2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="{dede:global.cfg_templets_skin/}/images/banner3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="{dede:global.cfg_templets_skin/}/images/banner4.jpg" alt=""></div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- 企业介绍 -->
+    <div class="jieshao">
+        <div class="container">
+            <div class="row">
+                <div class="left col-md-6  col-xs-12">
+                    <img src="{dede:global.cfg_templets_skin/}/images/js.jpg" alt="" id="show1">
+                </div>
+                <div class="right col-md-5 col-md-offset-1 col-xs-12" style="padding:0px;">
+                    <div class="chaguan">
+                        <h1 id="show2">茶馆简介</h1>
+                    </div>
+                    <div class="xian" id="show3"></div>
+                    <div class="jianjie">
+                        <h4>茶馆简介</h4>
+                        <p>沁香茶馆创办于2010年，全楼2700多平，以经营健康茶、原生态餐饮、茶修教育、艺术品收藏为主，是一家集传统文化与当代艺术于一体的高端茶会馆。会馆的装修风格大气、内敛、含蓄、简约、古朴，于细微处透露着禅宗的意味。沁香茶馆创办于2010年，全楼2700多平，以经营健康茶、原生态餐饮、茶修教育、艺术品收藏为主。
+                        </p>
+                        {dede:type typeid='1'} <a href="[field:typeurl/]#jianjie">了解更多</a>{/dede:type}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 产品展示 -->
+    <div class="zhanshi">
+        <div class="mask">
+            <div class="container">
+                <h1 id="show4"><span>—</span>产|品|中|心<span>—</span></h1>
+                <div class="tuijian row" id="show5">
+                    <ul class="tab-tu col-md-4 col-xs-12">
+                        <li style="display: block;"><img src="{dede:global.cfg_templets_skin/}/images/2.png" alt=""></li>
+                        <li><img src="{dede:global.cfg_templets_skin/}/images/3.png" alt=""></li>
+                        <li><img src="{dede:global.cfg_templets_skin/}/images/4.png" alt=""></li>
+                        <li><img src="{dede:global.cfg_templets_skin/}/images/5.png" alt=""></li>
+                        <li><img src="{dede:global.cfg_templets_skin/}/images/6.png" alt=""></li>
+                        <li><img src="{dede:global.cfg_templets_skin/}/images/7.png" alt=""></li>
+                        <li><img src="{dede:global.cfg_templets_skin/}/images/8.png" alt=""></li>
+                        <li><img src="{dede:global.cfg_templets_skin/}/images/2.png" alt=""></li>
+                    </ul>
+                    <div class="rexiao col-md-7 col-xs-12 ">
+                        <div class="kuanshi ">
+                            <ul class="tab-title">
+                                <li style="display: block;">
+                                    <p>西湖龙井</p>
+                                </li>
+                                <li>
+                                    <p>黄山毛峰</p>
+                                </li>
+                                <li>
+                                    <p>六安瓜片</p>
+                                </li>
+                                <li>
+                                    <p>新林玉露</p>
+                                </li>
+                                <li>
+                                    <p>凤凰水仙</p>
+                                </li>
+                                <li>
+                                    <p>武夷岩茶</p>
+                                </li>
+                                <li>
+                                    <p>君山银针</p>
+                                </li>
+                                <li>
+                                    <p>祁门功夫</p>
+                                </li>
+                            </ul>
+                            <span> {dede:type typeid='2'} <a href="[field:typeurl/]">查看更多</a>{/dede:type}</span>
+                        </div>
+                        <div class="xian "></div>
+                        <div class="zi ">
+                            <ul class="tab-wen">
+                                <li style="display: block;">
+                                    <p>西湖龙井属于炒青绿茶，产于浙江杭州西湖的狮峰，翁家山，虎跑，梅家坞，云栖，灵隐一带的群山之中,为历史名茶,以“色绿、香郁、味醇、形美”四绝著称于世，享有“百茶之首”、“绿茶皇后”的美誉,素有“国茶”之称。</p>
+                                </li>
+                                <li>
+                                    <p>黄山毛峰产自安徽省黄山市，始创于清代光绪年间。因新茶“白毫披身、芽尖似峰”，且鲜叶采自黄山高峰，故名。其开汤后，雾气绕顶，清香四溢，若惠兰之香，且冲泡后芽叶浮沉于杯中，有“轻如蝉翼，嫩似莲心”之说。</p>
+                                </li>
+                                <li>
+                                    <p>六安瓜片又称片茶，是中国历史名茶中唯一由单片鲜叶制成、不含芽头和茶梗的特种绿茶。六安瓜片茶的外形 顺直匀整，叶边背卷平摊，如颗颗瓜子，且色、香、味、形都在这一片瓜子形的叶子上。冲泡后，香气高爽持久，汤色通透明亮，色泽黄绿，滋味醇爽浓厚，回甘美妙。叶底绿嫩鲜活，舒展滋润。</p>
+                                </li>
+                                <li>
+                                    <p>产于河南省信阳市新县。新林玉露成品茶色泽苍翠绿润，形似松针状，汤色嫩绿明亮，如玉如露，香气清爽，滋味醇和爽口，回味甘甜，香气淡雅清醇，叶底平伏完整，嫩绿明亮柔软，具有明显的“色绿，汤绿，叶绿”三绿特点</p>
+                                </li>
+                                <li>
+                                    <p>茶叶的外形条索细长，呈现为条形，对于茶叶的质量不同而有着不同等级的区分，带有着天然的花香，香气沁人心脾，茶叶外形肥大，香味馥郁，滋味鲜醇甘甜，外表油润光泽，茶汤为澄黄色，味道爽口无比，久久回甘，生津止渴，受到很多人的喜爱。</p>
+                                </li>
+                                <li>
+                                    <p>武夷岩茶产于闽北“秀甲东南”的名山武夷，茶树生长在岩缝之中。武夷岩茶具有绿茶之清香，红茶之甘醇，是中国乌龙茶中之极品。武夷岩茶属半发酵茶，制作方法介于绿茶与红茶之间。其主要品种有“大红袍”、“白鸡冠”、“水仙”、“乌龙”、“肉桂”等。</p>
+                                </li>
+                                <li>
+                                    <p>君山银针产于湖南岳阳洞庭湖中的君山。黄茶中的珍品。其成品茶芽头茁壮，长短大小均匀，茶芽内面呈金黄色，外层白毫显露完整，而且包裹坚实，茶芽外形很象一根根银针，故得其名。君山茶历史悠久，唐代就已生产、出名。文成公主出嫁西藏时就曾选带了君山茶。</p>
+                                </li>
+                                <li>
+                                    <p>祁门红茶，著名红茶精品，简称祁红，产于中国安徽省西南部黄山支脉区的祁门县一带。当地的茶树品种高产质优，植于肥沃的红黄土壤中，而且气候温和、雨水充足、日照适度，所以生叶柔嫩且内含水溶性物质丰富，又以8月份所采收的品质比较佳。</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="chanpin" id="show6">
+                    <div class="row ">
+                        <ul class="tab-img">
+                            <li class="col-md-3 col-xs-6 ">
+                                <a href="javascript:void(0)"><img src="{dede:global.cfg_templets_skin/}/images/2.png " alt=" "></a>
+                            </li>
+                            <li class="col-md-3 col-xs-6 ">
+                                <a href="javascript:void(0)"><img src="{dede:global.cfg_templets_skin/}/images/3.png " alt=" "></a>
+                            </li>
+                            <li class="col-md-3 col-xs-6 ">
+                                <a href="javascript:void(0)"><img src="{dede:global.cfg_templets_skin/}/images/4.png " alt=" "></a>
+                            </li>
+                            <li class="col-md-3 col-xs-6 ">
+                                <a href="javascript:void(0)"><img src="{dede:global.cfg_templets_skin/}/images/5.png " alt=" "></a>
+                            </li>
+                            <li class="col-md-3 col-xs-6 ">
+                                <a href="javascript:void(0)"><img src="{dede:global.cfg_templets_skin/}/images/6.png " alt=" "></a>
+                            </li>
+                            <li class="col-md-3 col-xs-6 ">
+                                <a href="javascript:void(0)"><img src="{dede:global.cfg_templets_skin/}/images/7.png " alt=" "></a>
+                            </li>
+                            <li class="col-md-3 col-xs-6 ">
+                                <a href="javascript:void(0)"><img src="{dede:global.cfg_templets_skin/}/images/8.png " alt=" "></a>
+                            </li>
+                            <li class="col-md-3 col-xs-6 ">
+                                <a href="javascript:void(0)"><img src="{dede:global.cfg_templets_skin/}/images/2.png " alt=" "></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 环境展示 -->
+    <div class="huanjing ">
+        <div class="container ">
+            <div class="row " style="margin:0px; padding:0px; ">
+                <div class="left col-md-4 col-xs-12 ">
+                    <h1 id="show7"><span>—</span>环|境|介|绍<span>—</span></h1>
+                    <p>沁香茶馆创办于2010年，全楼2700多平，以经营健康茶、原生态餐饮、茶修教育、艺术品收藏为主，是一家集传统文化与当代艺术于一体的高端茶会馆。会馆的装修风格大气、内敛、含蓄、简约、古朴，于细微处透露着禅宗的意味。沁香茶馆创办于2010年，全楼2700多平，以经营健康茶、原生态餐饮、茶修教育、艺术品收藏为主，是一家集传统文化与当代艺术于一体的高端茶会馆。会馆的装修风格大气、内敛、含蓄、简约、古朴，于细微处透露着禅宗的意味。
+                    </p>
+                    {dede:type typeid='1'} <a href="[field:typeurl/]#huanjin ">了解更多</a>{/dede:type}
+                </div>
+                <div class="right col-md-7 col-md-offset-1 col-xs-12 ">
+                    <div class="zuo "><img src="{dede:global.cfg_templets_skin/}/images/hj01.jpg " alt=" " id="show8">
+                    </div>
+                    <div class="you ">
+                        <img src="{dede:global.cfg_templets_skin/}/images/hj02.jpg " alt=" ">
+                        <img src="{dede:global.cfg_templets_skin/}/images/hj03.jpg " alt=" ">
+                        <img src="{dede:global.cfg_templets_skin/}/images/hj04.jpg " alt=" ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 最新活动 -->
+    <div class="huodong "><img src="{dede:global.cfg_templets_skin/}/images/bg1.jpg" alt=""></div>
+
+    <!-- 茶馆动态 -->
+    <div class="dongtai ">
+        <div class="container ">
+            <h1 id="show9"><span>—</span>茶|馆|资|讯<span>—</span></h1>
+            <div class="zixun ">
+                <ul class="top ">
+                    {dede:channel type ='son' channelid='7' row='3' typeid='9,11,12'}
+                    <li class=" ">[field:typename/]</li>
+                    {/dede:channel}
+                </ul>
+                <ul class="body ">
+                    <li class="row " style="display: block; ">
+                        {dede:arclist typeid='9' row='6' imgwidth='100' imgheight='50'}
+                        <div class="xinxi col-md-6 col-xs-12 " id="show9 ">
+                            <a href="[field:arcurl/] " style="text-decoration: none; display: inline; ">
+                                <div class="xinwen ">
+                                    <div class="tu "><img src="[field:picname/] " alt=" "></div>
+                                    <div class="wenzi ">
+                                        <h4 style="color: black; ">[field:title/]</h4>
+                                        <span>[field:pubdate function="MyDate( 'Y-m-d',@me) "/]</span>
+                                        <p> [field:description function="cn_substr(@me,200) "/]....</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        {/dede:arclist}
+                    </li>
+                    <li class="row ">
+                        {dede:arclist typeid='11' row='6' imgwidth='100' imgheight='50'}
+                        <div class="xinxi col-md-6 col-xs-12 " id="show10 ">
+                            <a href="[field:arcurl/] " style="text-decoration: none; display: inline; ">
+                                <div class="xinwen ">
+                                    <div class="tu "><img src="[field:picname/] " alt=" "></div>
+                                    <div class="wenzi ">
+                                        <h4 style="color: black; ">[field:title/]</h4>
+                                        <span>[field:pubdate function="MyDate( 'Y-m-d',@me) "/]</span>
+                                        <p> [field:description function="cn_substr(@me,200) "/]....</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        {/dede:arclist}
+                    </li>
+                    <li class="row ">
+                        {dede:arclist typeid='12' row='6' imgwidth='100' imgheight='50'}
+                        <div class="xinxi col-md-6 col-xs-12 " id="show11 ">
+                            <a href="[field:arcurl/] " style="text-decoration: none; display: inline; ">
+                                <div class="xinwen ">
+                                    <div class="tu "><img src="[field:picname/] " alt=" "></div>
+                                    <div class="wenzi ">
+                                        <h4 style="color: black; ">[field:title/]</h4>
+                                        <span>[field:pubdate function="MyDate( 'Y-m-d',@me) "/]</span>
+                                        <p> [field:description function="cn_substr(@me,200) "/]....</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        {/dede:arclist}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页尾 -->
+    {dede:include filename="footer.htm "/}
+</body>
+<script type="text/javascript " src="{dede:global.cfg_templets_skin/}/js/jquery.min.js "></script>
+<script type="text/javascript " src="{dede:global.cfg_templets_skin/}/js/bootstrap.min.js "></script>
+<script src="{dede:global.cfg_templets_skin/}/js/swiper.min.js "></script>
+<script>
+    $(function() {
+        // 列表
+        $(".top li ").click(function() {
+            $(this).addClass("news ").siblings().removeClass("news ");
+
+            var xiabiao2 = $(this).index();
+            $(".body li ").eq(xiabiao2).show().siblings().hide();
+        });
+
+        $(window).load(function() {
+            $(".top li:first ").addClass("news ");
+        });
+
+
+
+        $(window).scroll(function() {
+            var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            console.log(" " + scrollTop)
+            if (scrollTop > 80) {
+                $("#show1 ").addClass('animated fadeInLeft');
+                $("#show2 ").addClass('animated slideInDown');
+                $("#show3 ").addClass('animated slideInUp');
+
+            }
+            if (scrollTop > 560) {
+                $("#show4 ").addClass('animated fadeInDown');
+            }
+            if (scrollTop > 650) {
+                $("#show5 ").addClass('animated fadeInUp');
+            }
+            if (scrollTop > 1000) {
+                $("#show6").addClass('animated fadeInRight');
+            }
+            if (scrollTop > 1650) {
+                $("#show7 ").addClass('animated fadeInLeft');
+                $("#show8 ").addClass('animated fadeInUp');
+            }
+            if (scrollTop > 2880) {
+                $("#show9").addClass('animated  fadeInUp');
+            }
+        });
+
+        $(".tab-img li").click(function() {
+            var xb = $(this).index();
+            $(".tab-tu li").eq(xb).show().stop().animate({
+                "left": "0px",
+                "opacity": "1",
+            }, 1000).siblings().hide().stop().animate({
+                "left": "-100px",
+                "opacity": "0",
+            }, 1000);
+
+            var xb2 = $(this).index();
+            $(".tab-wen li").eq(xb2).show().stop().animate({
+                "right": "0px",
+                "opacity": "1",
+            }, 1000).siblings().hide().stop().animate({
+                "right": "-100px",
+                "opacity": "0",
+            }, 1000);
+
+            var xb3 = $(this).index();
+            $(".tab-title li").eq(xb3).show().stop().animate({
+                "right": "0px",
+                "opacity": "1",
+            }, 1000).siblings().hide().stop().animate({
+                "right": "-100px",
+                "opacity": "0",
+            }, 1000);
+
+        })
+    })
+</script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        grabCursor: true,
+        effect: 'fade',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 3000
+        },
+    });
+</script>
+
+</html>

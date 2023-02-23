@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+span {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.row {
+    margin: 0!important;
+}
+
+
+/* 轮播图 */
+
+.lunbutu {
+    width: 100%;
+}
+
+.lunbotu .swiper-slide img {
+    width: 100%;
+    display: block;
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #6e9866;
+}
+
+
+/* 企业介绍 */
+
+.jieshao {
+    width: 100%;
+    background-image: url(../images/bg3.jpg);
+    background-size: 100% 100%;
+}
+
+.jieshao .container {
+    padding: 130px 0px 180px 0px;
+}
+
+.jieshao .left img {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+}
+
+.jieshao .right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.jieshao .right .chaguan h1 {
+    font-family: '宋体';
+    line-height: 45px;
+    margin-left: 20px;
+}
+
+.jieshao .right .xian {
+    width: 2px;
+    height: 320px;
+    background: #000;
+    margin: 0px 35px;
+}
+
+.jieshao .right .jianjie h4 {
+    font-weight: bold;
+}
+
+.jieshao .right .jianjie p {
+    font-size: 16px;
+    line-height: 32px;
+    margin: 5px 0px 30px;
+    text-align: justify;
+    padding-right: 15px;
+}
+
+.jieshao .right .jianjie a {
+    padding: 5px 15px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    color: #000;
+    text-decoration: none;
+}
+
+.jieshao .right .jianjie a:hover {
+    color: white;
+    background: #6e9866;
+    ;
+}
+
+
+/* 展品展示 */
+
+.zhanshi {
+    width: 100%;
+    background-image: url(../images/bj-3.jpg);
+    background-size: 100% 100%;
+    color: white;
+}
+
+.zhanshi .mask {
+    background: rgba(0, 0, 0, 0.8);
+    padding-bottom: 80px;
+}
+
+.zhanshi .container {
+    padding-top: 80px;
+}
+
+.zhanshi .container h1 {
+    font-family: '宋体';
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 6px;
+}
+
+.zhanshi .container h1 span {
+    height: 1px;
+    width: 20%;
+    color: white !important;
+    margin: 0px 5px;
+}
+
+.zhanshi .tuijian .rexiao {
+    margin: 40px 5px 30px 5px;
+}
+
+.zhanshi .tuijian .rexiao .kuanshi {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.zhanshi .tuijian .rexiao .kuanshi p {
+    font-size: 24px;
+    font-family: '宋体';
+    font-weight: bold;
+    color: #fff;
+    text-align: justify;
+}
+
+.zhanshi .tuijian .rexiao .kuanshi span {
+    margin: 0px 0px 20px 30px;
+    border: 1px solid #ccc;
+    background: #6e9866;
+    padding: 0px 20px;
+    font-family: '楷体';
+    font-size: 20px;
+}
+
+.zhanshi .tuijian .rexiao .kuanshi span a {
+    color: white !important;
+    text-decoration: none;
+}
+
+.zhanshi .tuijian .rexiao .xian {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    margin: 15px 0px;
+}
+
+.zhanshi .tuijian .rexiao .zi p {
+    color: #fff;
+    line-height: 24px;
+}
+
+.zhanshi .chanpin ul li img {
+    width: 100%;
+    display: block;
+    transition: all 1s;
+}
+
+.zhanshi .chanpin ul li img:hover {
+    transform: scale(1.2);
+}
+
+.zhanshi .tab-tu li {
+    display: none;
+}
+
+.zhanshi .tab-tu li img {
+    transform: scale(1.3);
+    display: block;
+    margin: 0 auto;
+}
+
+.zhanshi .tab-title li {
+    display: none;
+}
+
+.zhanshi .tab-wen li {
+    display: none;
+}
+
+
+/* 环境介绍 */
+
+.huanjing {
+    width: 100%;
+    background-image: url(../images/bg4.jpg);
+    background-size: 100% 100%;
+}
+
+.huanjing .container {
+    padding: 150px 0px;
+}
+
+.huanjing .left {
+    border-bottom: 1px solid #6e9866;
+    padding-bottom: 80px;
+    margin: 60px 0px 30px;
+}
+
+.huanjing .left h1 {
+    font-family: '宋体';
+    margin-bottom: 40px;
+    letter-spacing: 6px;
+}
+
+.zhanshi .container h1 span {
+    height: 1px;
+    width: 20%;
+    color: #000;
+    margin: 0px 5px;
+}
+
+.huanjing .left p {
+    text-align: justify;
+    line-height: 32px;
+    margin: 10px auto 60px;
+}
+
+.huanjing .left a {
+    padding: 5px 15px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    color: #000;
+    text-decoration: none;
+}
+
+.huanjing .left a:hover {
+    color: white;
+    background: #6e9866;
+}
+
+.huanjing .right {
+    display: flex;
+}
+
+.huanjing .right .zuo {
+    margin-right: 30px;
+}
+
+.huanjing .right .zuo img {
+    width: 100%;
+    display: block;
+}
+
+.huanjing .right .you {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.huanjing .right .you img {
+    width: 100%;
+    display: block;
+    transition: all 0.3s;
+}
+
+.huanjing .right .you img:hover {
+    box-shadow: 3px 3px 0px 0px #ccc;
+    transform: translateX(4px);
+}
+
+
+/* 最新活动 */
+
+.huodong {
+    width: 100%;
+}
+
+.huodong img {
+    width: 100%;
+    display: block;
+}
+
+
+/* 茶馆动态 */
+
+.dongtai {
+    width: 100%;
+    background-image: url(../images/bg3.jpg);
+    background-size: 100% 100%;
+    padding: 100px 0px;
+}
+
+.dongtai .container h1 {
+    font-family: '宋体';
+    text-align: center;
+    letter-spacing: 6px;
+}
+
+.zhanshi .container h1 span {
+    height: 1px;
+    width: 20%;
+    color: #000;
+    margin: 0px 5px;
+}
+
+.dongtai .zixun .top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.dongtai .zixun .top li {
+    border: 1px solid #6e9866;
+    padding: 10px 20px;
+    margin: 5% 3%;
+}
+
+.news {
+    background: #8ec601;
+    color: white;
+}
+
+.dongtai .zixun .body li {
+    display: none;
+}
+
+.dongtai .zixun .body li .xinxi {
+    margin: 10px auto;
+}
+
+.dongtai .zixun .body li .xinxi .xinwen {
+    background: white;
+    border: 1px solid #ccc;
+    display: flex;
+    padding: 10px;
+    box-shadow: 3px 3px 3px 3px #ccc;
+    transition: all 0.3s;
+}
+
+.dongtai .zixun .body li .xinxi .xinwen:hover {
+    transform: translateY(-4px);
+}
+
+.dongtai .zixun .body li .xinxi .xinwen .tu img {
+    width: 120px;
+    height: 120px;
+    display: block;
+}
+
+.dongtai .zixun .body li .xinxi .xinwen .wenzi {
+    margin-left: 20px;
+}
+
+.dongtai .zixun .body li .xinxi .xinwen .wenzi span {
+    color: #6e9866;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px auto;
+}
+
+.zhanshi .tuijian .rexiao .kuanshi span a {
+    color: black;
+}
+
+.dongtai .zixun .body li .xinxi .xinwen .wenzi p {
+    color: #888888;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+@media screen and (max-width:768px) {
+    .jieshao .container {
+        padding: 50px 0;
+    }
+    .huanjing .container {
+        padding: 20px 0;
+    }
+    .dongtai {
+        padding: 20px 0;
+    }
+    .jieshao .right .xian {
+        margin: 0 15px;
+    }
+    .jieshao .right .jianjie p {
+        line-height: 26px;
+    }
+    .huanjing .left h1 {
+        text-align: center;
+    }
+    .dongtai .zixun .body li .xinxi .xinwen .tu img {
+        height: 100%;
+    }
+}

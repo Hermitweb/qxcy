@@ -1,0 +1,139 @@
+body {
+    background: url(../images/bg4.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: "仿宋";
+    src: url(../fonts/仿宋.ttf);
+}
+
+img {
+    max-width: 100%!important;
+    min-width: 100%!important;
+}
+
+.content_box {
+    font-family: "仿宋";
+    color: #fff;
+}
+
+.content {
+    font-size: 1.2em;
+    padding: 15px 100px;
+}
+
+.content p {
+    text-indent: 2em;
+    line-height: 30px;
+    color: black!important;
+}
+
+.fanpian {
+    margin-top: 50px;
+    border-top: 1px solid white;
+    padding: 15px 100px;
+}
+
+.fanpian li {
+    color: black;
+    margin-top: 10px;
+}
+
+.fanpian li a {
+    color: black;
+}
+
+.fanpian li a:hover {
+    color: skyblue;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 16px;
+    padding: 15px 30px;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+center {
+    margin: 50px 0px;
+    color: black;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.content_box_left {
+    background: white;
+    margin: 50px 0;
+}
+
+.fanhuidb {
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgb(8, 68, 40);
+    border-radius: 50%;
+    background: rgb(255, 254, 254);
+    opacity: 0.5;
+    line-height: 80px;
+    text-align: center;
+    font-size: 25px;
+    position: fixed;
+    bottom: 10%;
+    right: 8%;
+    display: none;
+}
+
+.fanhuidb a {
+    color: black;
+    display: block;
+}
+
+.fanhuidb:hover {
+    opacity: 0.8;
+}
+
+.img-wrapper {
+    width: auto !important;
+}
+
+.img-wrapper img {
+    height: auto !important;
+}
+
+@media screen and (max-width: 992px) {
+    .element.style {
+        max-width: 100%!important;
+        min-width: 100%!important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .content {
+        padding: 2em;
+    }
+    img {
+        display: block;
+    }
+    .title {
+        margin-top: 0;
+    }
+    .fanpian {
+        margin-top: 0;
+        padding: 15px 20px;
+    }
+}

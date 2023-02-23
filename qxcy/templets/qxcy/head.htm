@@ -1,0 +1,44 @@
+<div class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="{dede:global.cfg_indexurl/}" class="navbar-brand">
+                <img src="{dede:global.cfg_templets_skin/}/images/logo.png">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+            <div class="navdao">
+            <ul class="nav navbar-nav">
+                <li class="button clockwise both"><a href="{dede:global.cfg_indexurl/}">{dede:global.cfg_indexname/}</a>
+                    <div class="inner"></div>
+                </li>
+
+                {dede:channel type="top" }
+                <li class="fge">|</li>
+                <li class="button clockwise both"><a href="[field:typelink/]">[field:typename/]</a>
+                    <div class="inner"></div>
+                </li>
+                {/dede:channel}
+
+            </ul>
+            <form name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php" class="navbar-form navbar-left">
+                <div class="form-group">
+                    <div class="input-group">
+                        <input type="text" name="q" placeholder="搜索......" class="form-control" id="search-keyword">
+                        <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+
+    </div>
+</div>

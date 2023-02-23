@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{dede:field.typename/}_{dede:global.cfg_webname/}</title>
+    <!-- <link rel="icon" href="{dede:global.cfg_templets_skin/}/images/favicon.ico" type="image/x-icon" /> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/nav.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/product/Productlist.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/./css/product/list-main.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/./css/product/list-sortable.min.css">
+    <script type="text/javascript" src="{dede:global.cfg_templets_skin/}/./js/product/list-sortable.min.js"></script>
+</head>
+
+<body>
+
+    {dede:include filename="head.htm"/}
+    <div class="cp">
+
+        <!-- <div class="totu">
+            <img src="images/product/pp3.jpg" alt="">
+            <div class="dwwenz">
+                <h1>定心绿茶</h1>
+                <p>
+                    绿茶中含有一种茶多酚物质,有很强大的生理活性以及抗氧化性
+                </p>
+                <p class="p2">可以帮助人体抗衰老,是人体自由基的清除剂,是很有效果的</p>
+            </div>
+        </div> -->
+        <div class="cp-nr">
+            <div class="weizhi">
+                <p>{dede:field name='position'/}</p>
+            </div>
+
+            <!-- 产品内容 -->
+            <div class="htmleaf-container">
+                <main class="sortable">
+                    <div class="container">
+                        <div class="wrapper">
+
+                            <!-- 选项卡 -->
+                            <div class="sortable__nav nav">
+                                <h1 class="title">
+                                    {dede:field.reid runphp='yes'} global $dsql; $reid = @me; $query = "SELECT * FROM `#@__arctype` where id =$reid "; $dsql->Execute('a', $query); $arctype = $dsql->GetObject('a'); @me = $arctype->typename; {/dede:field.reid}
+                                </h1>
+
+                            </div>
+                            <ul class="tabtop">
+                                {dede:channel type ='son' currentstyle='
+                                <li><a href="~typelink~" class="active2">~typename~</a></li>'}
+                                <li><a href="[field:typelink/]">[field:typename/]</a></li>
+                                {/dede:channel}
+                            </ul>
+                            <div id="sortable" class="sjs-default">
+                                {dede:list pagesize ='9'}
+                                <div data-sjsel="flatty">
+                                    <div class="card">
+                                        <a href="[field:arcurl/]">
+                                            <div class="card-tu">
+                                                <img class="card__picture" src="[field:picname/]" alt="">
+                                            </div>
+                                            <div class="card-infos">
+                                                <h2 class="card__title">[field:title/]</h2>
+                                                <p class="card__text">
+                                                    [field:description function="cn_substr(@me,200)"/]....
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                                {/dede:list}
+
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+            </div>
+
+        </div>
+        <ul class="pagelist">{dede:pagelist listitem="index,pre,pageno,next,end,option,info" listsize="1"/}</ul>
+
+
+    </div>
+    {dede:include filename="footer.htm"/}
+    <script type="text/javascript">
+        document.querySelector('#sortable').sortablejs()
+    </script>
+</body>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+</html>
